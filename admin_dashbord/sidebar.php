@@ -14,12 +14,22 @@
       </li>
       <li><div class="dropdown">
   <span class="text-secondary dropdown-toggle lists" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="bi bi-check"></i>
-    Dropdown button
+    <i class="bi bi-bookmark-fill mx-2"></i>
+    Add Category
   </span>
   <ul class="dropdown-menu mx-3">
     <li><a class="dropdown-item" href="add_data.php">Add data</a></li>
     <li><a class="dropdown-item" href="view_page.php">View Data</a></li>
+  </ul>
+</div></li>
+      <li><div class="dropdown">
+  <span class="text-secondary dropdown-toggle lists" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="bi bi-bookmark-fill mx-2"></i>
+    Slect Product
+  </span>
+  <ul class="dropdown-menu mx-3">
+    <li><a class="dropdown-item" href="./product.php">Add Product</a></li>
+    <li><a class="dropdown-item" href="./view_product.php">View Product</a></li>
   </ul>
 </div></li>
       <li class="list-group-item border-0 text-secondary lists">

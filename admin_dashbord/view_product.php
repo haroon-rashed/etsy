@@ -16,7 +16,7 @@
             overflow-x: hidden !important;
         }
     </style>
-    <title>Document</title>
+    <title>View Product</title>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
 
     <?php
     include "./popup.php";
-    displayMessage("category_success", "success");
+    displayMessage("product_success", "success");
     ?>
 
     <div class="" style="background-color: #F2EDF3">
@@ -49,9 +49,17 @@
                                     <td>
                                         <input type="checkbox" name="" id="">
                                     </td>
-                                    <td class="fw-semibold text-secondary">Categarios</td>
-                                    <td class="fw-semibold text-secondary">Total Products</td>
-                                    <td class="fw-semibold text-secondary">Total Earnings</td>
+                                    <td class="fw-semibold text-secondary">Products</td>
+                                    <td class="fw-semibold text-secondary">Name</td>
+                                    <td class="fw-semibold text-secondary">Color</td>
+                                    <td class="fw-semibold text-secondary">Barcode</td>
+                                    <td class="fw-semibold text-secondary">Base Price</td>
+                                    <td class="fw-semibold text-secondary">Discount Price</td>
+                                    <td class="fw-semibold text-secondary">Tax</td>
+                                    <td class="fw-semibold text-secondary">Stock</td>
+                                    <td class="fw-semibold text-secondary">Slect Category</td>
+                                    <td class="fw-semibold text-secondary">Status</td>
+                                    <td class="fw-semibold text-secondary">Tags</td>
                                     <td class="fw-semibold text-secondary">Action</td>
                                 </tr>
                             </thead>
@@ -59,18 +67,18 @@
 
                                 <?php
                                 include "./config.php";
-                                $slect = "SELECT * FROM category";
+                                $slect = "SELECT * FROM product";
 
-                                $res = mysqli_query($connect, $slect);
+                                $result = mysqli_query($connect, $slect);
 
-                                foreach ($res as $item) { ?>
+                                foreach ($result as $item) { ?>
                                     <tr>
                                         <td>
                                             <input type="checkbox" name="" id="">
                                         </td>
                                         <td>
                                             <div class="d-flex">
-                                                <img class="rounded-3 p-1 " height="50px" width="50px" src="../Upload_images/<?php trim(print_r($item['image'])) ; ?>" alt="image">
+                                                <img class="rounded-3 p-1 " height="50px" width="50px" src="./upload_product_images/<?php trim(print_r($item['image'])) ; ?>" alt="image">
                                                 <div class="d-flex flex-column">
                                                     <h6 class="m-0"><?php echo $item[
                                                         "name"
@@ -79,8 +87,38 @@
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>12000</td>
-                                        <td>$98,000</td>
+                                        <td><?php
+                                        echo $item['name'];
+                                        ?></td>
+                                        </td>
+                                        <td><?php
+                                        echo $item['color'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['barcode'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['base_price'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['discount_price'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['tax'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['stock'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['status'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['tags'];
+                                        ?></td>
+                                        <td><?php
+                                        echo $item['select_category'];
+                                        ?></td>
+                                       
                                         <td>
                                             <div class="d-flex gap-2">
                                                 <i class="bi bi-pencil-square"></i>
