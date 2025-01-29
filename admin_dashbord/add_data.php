@@ -32,7 +32,7 @@
         include "admin_nav.php";
         ?>
         <div class="row">
-            <div class=" col-xl-2 col-lg-3 col-sm-4 bg-white p-0 shadow" style="height: 80vh; overflow-y : scroll;">
+            <div class=" col-xl-2 col-lg-3 col-sm-4 bg-white p-0 shadow" style="height: 85vh; overflow-y : scroll;">
                 <?php
                 include "./sidebar.php";
                 ?>

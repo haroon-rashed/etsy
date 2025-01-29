@@ -35,10 +35,10 @@ function displayMessage($name, $varient)
                 message.style.opacity = "1";
             }, 100)
 
-            // setTimeout(() => {
-            //     message.style.transform = "translateY(0)";
-            //     message.style.opacity = "0";
-            // }, 6000)
+            setTimeout(() => {
+                message.style.transform = "translateY(0)";
+                message.style.opacity = "0";
+            }, 6000)
 
             close_message.forEach((item, index) => {
                 item.addEventListener("click", () => {

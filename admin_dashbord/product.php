@@ -31,7 +31,7 @@ displayMessage('category_success', 'success');
     include "admin_nav.php";
     ?>
     <div class="row">
-        <div class=" col-xl-2 d-none d-xl-block bg-white p-0 shadow" style="height: 80vh; overflow-y : scroll;">
+        <div class=" col-xl-2 d-none d-xl-block bg-white p-0 shadow" style="height: 85vh; overflow-y : scroll;">
       <?php
       include "./sidebar.php";
       ?>

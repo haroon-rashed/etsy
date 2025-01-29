@@ -30,7 +30,7 @@
     <div class="" style="background-color: #F2EDF3">
         <?php include "admin_nav.php"; ?>
         <div class="row">
-            <div class=" col-xl-2 col-lg-3 col-sm-4 bg-white p-0 shadow" style="height: 80vh; overflow-y : scroll;">
+            <div class=" col-xl-2 col-lg-3 col-sm-4 bg-white p-0 shadow" style="height: 85vh; overflow-y : scroll;">
                 <?php include "./sidebar.php"; ?>
             </div>
 
@@ -118,7 +118,6 @@
                                         <td><?php
                                         echo $item['select_category'];
                                         ?></td>
-                                       
                                         <td>
                                             <div class="d-flex gap-2">
                                                 <i class="bi bi-pencil-square"></i>
